@@ -1,15 +1,13 @@
 /* Nav Icon */
 
+
 .mobile-nav-btn {
-	@media (min-width: 599px) {
-		display: none;
-	}
 	//время анимации
 	--time: 0.1s;
-	//ширина и высота общего размера кнопки
+//ширина и высота общего размера кнопки
 	--width: 40px;
 	--height: 30px;
-	//толщина линии и растояние между ними
+//толщина линии и растояние между ними
 	--line-height: 4px;
 	--spacing: 6px;
 
@@ -30,6 +28,8 @@
 	align-items: center;
 }
 
+
+
 .nav-icon {
 	position: relative;
 	width: var(--width);
@@ -38,9 +38,11 @@
 	border-radius: var(--radius);
 }
 
+
+
 .nav-icon::before,
 .nav-icon::after {
-	content: "";
+	content: '';
 	display: block;
 
 	position: absolute;
@@ -51,7 +53,8 @@
 
 	border-radius: var(--radius);
 	background-color: var(--color);
-	transition: transform var(--time) ease-in, top var(--time) linear var(--time);
+	transition: transform var(--time) ease-in,
+		top var(--time) linear var(--time);
 }
 
 .nav-icon::before {
@@ -71,7 +74,8 @@
 .nav-icon.nav-icon--active::before,
 .nav-icon.nav-icon--active::after {
 	top: 0;
-	transition: top var(--time) linear, transform var(--time) ease-in var(--time);
+	transition: top var(--time) linear,
+		transform var(--time) ease-in var(--time);
 }
 
 .nav-icon.nav-icon--active::before {

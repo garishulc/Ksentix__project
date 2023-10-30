@@ -1,28 +1,13 @@
 <header class="header">
-  <div class="container">
-    <div class="header__content">
-      <div class="header__content-body">
-        <h1 class="header__title title">
-          Здесь будет короткоe приветсвие большими
-          буквами,Здарова заебал!
-        </h1>
-        <p class="header__text">
-          Здесь будет некий текст кратко описывающий компанию и что-то, что небходмо указать. Так же можно добавить
-          текст с призывом к дейсвиюю Или слоган.
-        </p>
-        <a href="#!" class="header__btn call-btn">Связяться</a>
-
-      </div>
-      <!-- <div class="header__content-picture">
-        <img src="../img/logo/Main_logo.svg" alt="Main_logo.svg" class="header__img">
-      </div> -->
-    </div>
-    <div class="header__bg-video">
-      <video autoplay muted loop src="../img/video/judge.mp4" class="header__video"></video>
+    <div class="container">
+        <div class="header__row">
+            <div class="logo"><img src="../img/logo/Main-logo.png" alt=""></div>
+            <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button>
+        </div>
     </div>
 </header>
-<!-- обычная версия навигации для десктопа -->
-@@include('desc-nav.html')
 <!-- подклюбчаем моьильную версиию навигации выезжающуюю
 по активации с помощью кнопки -->
 @@include('mobile-nav.html')
