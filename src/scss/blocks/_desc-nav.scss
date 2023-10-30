@@ -1,0 +1,40 @@
+.desc-nav {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0);
+
+	&__row {
+		height: 96px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.desc-nav__logo {
+}
+.desc-nav__list {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	a {
+		color: var(--accent);
+		font-size: 20px;
+		&:hover {
+			color: var(--hover);
+			transition: 0.5s;
+		}
+	}
+}
+.desc-nav__img {
+	display: block;
+	width: 70px;
+	&:hover {
+		transition: 0.7s;
+		transform: scale(1.2);
+	}
+}
+.desc-nav-btn {
+}
