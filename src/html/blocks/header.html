@@ -1,13 +1,39 @@
 <header class="header">
-    <div class="container">
-        <div class="header__row">
-            <div class="logo"><img src="../img/logo/Main-logo.png" alt=""></div>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
-            </button>
-        </div>
+  <div class="header__container container">
+    <a href="index.html" class="header__logo header__menu-logo">
+      <img class="menu__img" src="../img/logo/Main_logo.svg" alt="" />
+    </a>
+    <div class="header__menu menu">
+      <div class="menu__icon">
+        <span></span>
+      </div>
+      <nav class="menu__body">
+        <ul class="menu__list">
+          <li>
+            <a href="#" class="menu__link">Отрасли</a>
+          </li>
+          <li class="menu__perent">
+            <a href="servises.html" class="menu__link">Услуги</a>
+            <span class="menu__arrow arrow"></span>
+            <ul class="menu__sub-list">
+              <li class="">
+                <a href="entity.html" class="menu__sub-link"
+                  >Юридическое лицо</a
+                >
+              </li>
+              <li class="">
+                <a href="#" class="menu__sub-link">Физическое лицо</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#page__section-3" class="menu__link">О нас</a>
+          </li>
+          <li>
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </div>
 </header>
-<!-- подклюбчаем моьильную версиию навигации выезжающуюю
-по активации с помощью кнопки -->
-@@include('mobile-nav.html')

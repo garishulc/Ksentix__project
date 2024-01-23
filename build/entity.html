@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <header class="header">
+  <div class="header__container container">
+    <a href="index.html" class="header__logo header__menu-logo">
+      <img class="menu__img" src="../img/logo/Main_logo.svg" alt="" />
+    </a>
+    <div class="header__menu menu">
+      <div class="menu__icon">
+        <span></span>
+      </div>
+      <nav class="menu__body">
+        <ul class="menu__list">
+          <li>
+            <a href="#" class="menu__link">Отрасли</a>
+          </li>
+          <li class="menu__perent">
+            <a href="servises.html" class="menu__link">Услуги</a>
+            <span class="menu__arrow arrow"></span>
+            <ul class="menu__sub-list">
+              <li class="">
+                <a href="entity.html" class="menu__sub-link"
+                  >Юридическое лицо</a
+                >
+              </li>
+              <li class="">
+                <a href="#" class="menu__sub-link">Физическое лицо</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#page__section-3" class="menu__link">О нас</a>
+          </li>
+          <li>
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <div class="entity">
+        <div class="container">
+          
+          <div class="breadcrumble">
+            <ul>
+              <li>
+                <a class="breadcrumble__home" href="index.html">Главная</a>
+              </li>
+              <li>
+                <a class="breadcrumble__servises" href="servises.html"
+                  >Услуги</a
+                >
+              </li>
+              <li class="breadcrumble__active breadcrumble__entity">
+                <span>Юридическое лицо</span>
+              </li>
+            </ul>
+          </div>
+          <div class="entity__title title">
+            <h3>Услуги для юридического лица</h3>
+          </div>
+          <div class="entity__body">
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-1" href="#disputes">
+                <p class="entity__card-text">Разрешение споров и арбитраж</p>
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-2" href="#bankruptcy">
+                <p class="entity__card-text">Банкротство</p>
+                <img src="" alt="" />
+                <!-- <picture>
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <svg
+                      width="100"
+                      height="100"
+                      viewBox="0 0 135.46666 135.46667"
+                      version="1.1"
+                      id="svg5"
+                      xml:space="preserve"
+                      inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+                      sodipodi:docname="bankrot.svg"
+                      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:svg="http://www.w3.org/2000/svg"
+                    >
+                      <sodipodi:namedview
+                        id="namedview7"
+                        pagecolor="#ffffff"
+                        bordercolor="#000000"
+                        borderopacity="0.25"
+                        inkscape:showpageshadow="2"
+                        inkscape:pageopacity="0.0"
+                        inkscape:pagecheckerboard="0"
+                        inkscape:deskcolor="#d1d1d1"
+                        inkscape:document-units="mm"
+                        showgrid="false"
+                        inkscape:zoom="1.104894"
+                        inkscape:cx="71.952602"
+                        inkscape:cy="293.24079"
+                        inkscape:window-width="1920"
+                        inkscape:window-height="1057"
+                        inkscape:window-x="-8"
+                        inkscape:window-y="-8"
+                        inkscape:window-maximized="1"
+                        inkscape:current-layer="layer1"
+                      />
+                      <defs id="defs2" />
+                      <g
+                        inkscape:label="Слой 1"
+                        inkscape:groupmode="layer"
+                        id="layer1"
+                      >
+                        <path
+                          style="fill: var(--accent); stroke-width: 0.290246"
+                          d="m 101.29543,135.25083 c -6.024281,-1.62041 -6.875806,-9.69871 -1.318268,-12.50619 3.959058,-1.99998 8.905288,0.28754 9.836338,4.54908 1.07875,4.9377 -3.57644,9.28633 -8.51807,7.95711 z M 41.000236,133.05887 C 12.771545,130.84565 -6.4854163,102.93669 2.1982841,76.823503 3.2848931,73.555896 11.645807,54.916304 12.797697,53.193463 c 2.038724,-3.049272 5.354342,-5.395856 9.322562,-6.597922 2.679026,-0.811538 42.111736,-0.811538 44.790761,0 3.968222,1.202066 7.283839,3.54865 9.322575,6.597922 1.112295,1.663626 9.453777,20.261613 10.411307,23.212841 1.424098,4.389177 1.628036,4.025972 -2.260565,4.025972 -4.977988,0 -4.714661,-0.443221 -4.714661,7.935526 0,6.604396 0,6.604396 -3.857975,8.464763 -6.303988,3.039869 -6.046793,2.48223 -4.536731,9.836445 0.979707,4.77129 0.979707,4.77129 -4.028065,7.70977 -8.334042,4.8903 -8.418568,5.29825 -1.93179,9.3235 1.69179,1.04979 3.187691,2.01804 3.324233,2.15163 0.32933,0.32224 -3.244879,2.38587 -6.568325,3.79238 -6.530613,2.76377 -13.97275,3.9691 -21.070787,3.41258 z m 11.216573,-19.08949 c 31.211626,-9.19012 24.819426,-54.069133 -7.701169,-54.069133 -33.826609,0 -38.6156302,47.269903 -5.532958,54.612993 3.108713,0.69002 10.00629,0.40656 13.234127,-0.54386 z M 42.170938,105.5227 c -0.0011,-2.51623 -0.0011,-2.51623 -1.281844,-3.03317 -2.736356,-1.10447 -5.13322,-4.19923 -5.557349,-7.17554 -0.250464,-1.757595 4.321599,-1.69357 4.607991,0.06453 0.64823,3.979385 7.004079,4.73734 8.787568,1.047951 1.661817,-3.437687 -0.207857,-6.221751 -4.652635,-6.92805 -9.943809,-1.58013 -12.171665,-13.693067 -3.185575,-17.320073 1.280747,-0.516938 1.280747,-0.516938 1.281844,-3.03317 0.0011,-2.516233 0.0011,-2.516233 2.344702,-2.516233 2.343606,0 2.343606,0 2.344702,2.516233 0.0011,2.516232 0.0011,2.516232 1.281844,3.03317 2.736368,1.104464 5.133219,4.199233 5.557361,7.175544 0.250462,1.757595 -4.3216,1.69357 -4.607991,-0.06453 -0.648241,-3.979389 -7.00408,-4.73735 -8.787581,-1.047953 -1.661805,3.437688 0.207869,6.221751 4.652635,6.92805 9.943821,1.58013 12.171678,13.693069 3.185576,17.320071 -1.280747,0.51694 -1.280747,0.51694 -1.281844,3.03317 -0.0011,2.51623 -0.0011,2.51623 -2.344702,2.51623 -2.343596,0 -2.343596,0 -2.344702,-2.51623 z m 80.042812,11.39865 c -12.6209,-2.06327 -12.46223,-20.369963 0.19389,-22.370736 12.84222,-2.030188 18.53576,15.651596 6.87666,21.356036 -1.2103,0.59214 -4.72151,1.43989 -5.37912,1.29872 -0.0806,-0.0172 -0.84171,-0.14511 -1.69143,-0.28402 z m -48.39003,-0.207 c -0.685055,-0.20189 -0.650154,-0.25106 0.732379,-1.03178 3.194865,-1.80418 3.189605,-1.78172 1.891121,-8.07499 -0.483365,-2.34273 -0.878851,-4.46973 -0.878851,-4.72669 0,-0.31245 1.26736,-1.08339 3.825722,-2.32719 5.016753,-2.439036 4.920823,-2.325052 5.025057,-5.970983 0.08426,-2.94581 0.08426,-2.94581 1.548958,-1.75747 11.251341,9.128113 1.676622,27.962443 -12.144386,23.889103 z m 29.8153,-27.474614 c -6.024277,-1.620432 -6.875789,-9.698719 -1.31826,-12.506194 3.95906,-1.999983 8.90529,0.287536 9.83634,4.54908 1.07876,4.937706 -3.57642,9.28633 -8.51808,7.957114 z M 28.160963,37.447818 c 0.142776,-5.766809 -1.697956,-5.183414 16.354677,-5.183414 18.052632,0 16.211902,-0.583395 16.354676,5.183414 0.09588,3.875021 0.09588,3.875021 -16.354676,3.875021 -16.450605,0 -16.450605,0 -16.354677,-3.875021 z m 3.5261,-11.434946 C 25.65989,9.9915589 23.028108,2.1305873 23.446503,1.3988557 c 0.821086,-1.43598985 1.150793,-1.47721932 11.849568,-1.48176891 9.968666,-0.0042396 9.968666,-0.0042396 12.010954,4.05277811 3.56349,7.0788631 4.915365,7.0788631 8.478844,0 2.0423,-4.05701743 2.0423,-4.05701743 4.980159,-4.05277811 6.27034,0.0090436 6.246435,-0.51689388 0.674691,14.84626721 -4.574109,12.61237 -4.574109,12.61237 -16.879318,12.687365 -12.305209,0.075 -12.305209,0.075 -12.874338,-1.437847 z"
+                          id="path814"
+                        />
+                      </g>
+                    </svg>
+                </picture> -->
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-3" href="#corporate-law">
+                <p class="entity__card-text">Корпоративное право</p>
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-4" href="#tax-law">
+                <p class="entity__card-text">Консалтинг и налоговые споры</p>
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-5" href="#construction">
+                <p class="entity__card-text">Строительство и недвижимость</p>
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-6" href="#agriculture">
+                <p class="entity__card-text">Сельское хозяйство</p>
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-7" href="#digital-law">
+                <p class="entity__card-text">Цифровое право</p>
+                <img src="" alt="" />
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-8" href="#intellectual">
+                <p class="entity__card-text">Интеллектуальная собственность</p>
+                <img src="" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="entity-sub-blocks">
+        <div class="conntaner">
+          <div class="disputes target target-1" id="disputes">
+  <div class="container">
+    <div class="disputes entity-sub-blocks__title title">
+      <h4>Решение споров и арбитраж</h4>
+    </div>
+    <p class="disputes__text entity-sub-blocks__text">
+      Практика разрешения споров и медиации является ключевой практикой фирмы,
+      фокус которой направлен на работу в областях, где правовое регулирование
+      является противоречивым или пробельным. Мы эффективно сопровождаем
+      многоаспектные и сложные судебные споры, связанные с инвестиционными,
+      кредитными, подрядными, лизинговыми и залоговыми правоотношениями, а также
+      корпоративные споры и споры, связанные с возвратом выведенных активов, в
+      том числе в рамках обособленных споров по банкротным процедурам.
+    </p>
+    <div class="disputes entity-sub-blocks__title title">
+      <h5>Разработка и реализация стратегии защиты Клиента:</h5>
+    </div>
+    <ul class="disputes__list">
+      <li class="disputes__link">
+        Оценка перспективы дела с учетом возможных позиций сторон
+      </li>
+      <li class="disputes__link">Поиск и подготовка доказательств</li>
+      <li class="disputes__link">Подготовка мировых соглашений</li>
+      <li class="disputes__link">
+        Представление интересов Клиента в суде во всех инстанциях, включая все
+        высшие судебные инстанции
+      </li>
+      <li class="disputes__link">Исполнительное производство</li>
+      <li class="disputes__link">Обеспечительные меры</li>
+    </ul>
+    <p class="disputes__text entity-sub-blocks__text">
+      Но может быть, лучше договориться? Сопутствующий ущерб от судебного спора
+      (в результате ареста активов и т.п.) может оказаться страшнее проигрыша
+      самого спора. Часто бывает, что для всех сторон лучше не доводить дело до
+      суда, а разрешить спор миром. В этом наши юристы тоже окажут содействие
+      доверителю. Мы поможем провести переговоры и достичь взаимовыгодного
+      решения!
+    </p>
+  </div>
+</div>
+
+          <div class="bankruptcy target target-2" id="bankruptcy">
+  <div class="container">
+    <div class="bankruptcy entity-sub-blocks__title title">
+      <h4>Банкротство</h4>
+    </div>
+    <p class="bankruptcy__text entity-sub-blocks__text">
+      В банкротном праве все классические представления цивилистов вдруг
+      оказываются неработающими и вступают в действие совсем другие, гораздо
+      более сложные законы. Однако специфика банкротных дел не только в
+      сложности возникающих в них теоретических вопросах. Подчас гораздо важнее
+      решить не менее сложные практические проблемы: выработать единую позицию
+      кредиторов, отыскать припрятанные должником активы, успеть вовремя
+      оспорить сомнительные сделки должника, привлечь к финансовой
+      ответственности его жуликоватых руководителей и так далее. И наоборот,
+      перед собственниками и руководителями бизнеса могут встать не менее
+      сложные задачи по защите от несправедливых обвинений. Для нас банкротное
+      право – это одна из основных областей специализации.
+    </p>
+    <div class="bankruptcy entity-sub-blocks__title title">
+      <h5>
+        Представляя интересы клиентов, мы предлагаем комплексную поддержку, либо
+        решение конкретных бизнес-задач
+      </h5>
+    </div>
+    <ul class="bankruptcy__list">
+      <li class="bankruptcy__link">
+        Оценка правовых оснований и подача заявления о признании контрагента
+        банкротом
+      </li>
+      <li class="bankruptcy__link">
+        Правовая поддержка при назначении арбитражного управляющего и
+        сопровождение его деятельности
+      </li>
+      <li class="bankruptcy__link">
+        Сопровождение процесса включения в реестр требований кредиторов должника
+      </li>
+      <li class="bankruptcy__link">
+        Противодействие включению в реестр фальсифицированных требований
+        кредиторов
+      </li>
+      <li class="bankruptcy__link">Защита и оспаривание сделок должника</li>
+      <li class="bankruptcy__link">Возврат незаконно выведенных активов</li>
+      <li class="bankruptcy__link">Взыскание дебиторской задолженности</li>
+      <li class="bankruptcy__link">
+        Анализ требований других кредиторов и подготовка возражений на них
+      </li>
+      <li class="bankruptcy__link">
+        Подготовка проекта анализа финансового состояния должника, заключения об
+        отсутствии (наличии) признаков преднамеренного банкротства, а также
+        подготовка мотивированных возражений на такие документы
+      </li>
+      <li class="bankruptcy__link">
+        Представление интересов в спорах о признании сделок должника
+        недействительными
+      </li>
+      <li class="bankruptcy__link">
+        Привлечение контролировавших должника лиц к субсидиарной ответственности
+        с целью погашения задолженности перед кредиторами
+      </li>
+      <li class="bankruptcy__link">
+        Обжалование действий (бездействия) арбитражного управляющего
+      </li>
+      <li class="bankruptcy__link"></li>
+    </ul>
+    <div class="bankruptcy entity-sub-blocks__title title">
+      <h5>
+        Пременительно к требованиям законодательства о несостоятельности
+        практика осуществляет административно-правовую защиту бизнеса
+      </h5>
+    </div>
+    <ul class="bankruptcy__list">
+      <li class="bankruptcy__list">
+        Привлечение арбитражных управляющих к административной ответственности
+      </li>
+      <li class="bankruptcy__list">
+        Привлечение к ответственности руководителя должника, в случае фиктивного
+        или преднамеренного банкротства, а также в случае необращения с
+        заявлением об инициировании соответствующей процедуры
+      </li>
+      <li class="bankruptcy__list">
+        Защита интересов компаний и их должностных лиц в административных
+        органах и судах всех уровней
+      </li>
+      <li class="bankruptcy__list">
+        Подготовка экспертных заключений в области административно-правовой
+        защиты бизнеса
+      </li>
+    </ul>
+  </div>
+</div>
+
+          <div class="corporate-law target target-3" id="corporate-law">
+  <div class="container">
+    <div class="corporate-law entity-sub-blocks__title title">
+      <h4>Корпоративное право</h4>
+    </div>
+    <p class="corporate-law__text entity-sub-blocks__text">
+      В чем специфика корпоративного права? Оно регулирует отношения множества
+      людей, имеющих отношение к юридическому лицу: его акционеров, директоров,
+      в некоторых случаях – кредиторов и т.д. В корпоративных спорах
+      сталкиваются очень многие разнонаправленные интересы!
+    </p>
+    <div class="corporate-law entity-sub-blocks__title title">
+      <h5>Корпоративная практика оказывает следующие услуги:</h5>
+    </div>
+    <ul class="corporate-law__list">
+      <li class="corporate-law__link">Подготовка и проведение сделок M&A</li>
+      <li class="corporate-law__link">Due Diligence</li>
+      <li class="corporate-law__link">
+        Юридическая поддержка при реорганизации и реструктуризации бизнеса и
+        активов
+      </li>
+      <li class="corporate-law__link">
+        Анализ эффективности и прозрачности структур корпоративного управления и
+        холдинговых структур, разработка новых моделей управления и владения
+      </li>
+      <li class="corporate-law__link">
+        Правовое сопровождение выпусков ценных бумаг и сделок с ними 
+      </li>
+      <li class="corporate-law__link">
+        Юридическая поддержка по различным аспектам деятельности компаний,
+        связанным с корпоративным законодательством
+      </li>
+      <li class="corporate-law__link">
+        Сопровождение клиентов на всех стадиях осуществления инвестиционных
+        проектов
+      </li>
+    </ul>
+    <p class="corporate-law__text entity-sub-blocks__text"></p>
+  </div>
+</div>
+
+          <div class="tax-law target target-4" id="tax-law">
+  <div class="container">
+    <div class="tax-law entity-sub-blocks__title title">
+      <h4>Консалтинг и налоговые споры</h4>
+    </div>
+    <p class="tax-law__text entity-sub-blocks__text">
+      Налоговые органы все строже относятся к налогоплательщикам, предъявляя
+      претензии к поведению, которое раньше казалось нормой. Суды же все более
+      склонны поддерживать требования налоговых органов, даже когда эти
+      требования объективно слабо обоснованы. Доказывание в суде перевернуто: по
+      сути, все бремя доказывания в споре с налоговым органом возлагается на
+      налогоплательщика. Некоторые пессимистически настроенные комментаторы
+      называют сложившуюся ситуацию «налоговым геноцидом».<br />
+      Мы предлагаем широкий спектр услуг и применяем комплексный подход в
+      решении задач, возникающих и в повседневной работе организаций, и при
+      принятии стратегических решений.
+    </p>
+    <div class="tax-law entity-sub-blocks__title title">
+      <h5>Консалтинг</h5>
+    </div>
+    <ul class="tax-law__list">
+      <li class="tax-law__link">
+        Налоговая поддержка в рамках текущей деятельности фирмы и групп компаний
+      </li>
+      <li class="tax-law__link">
+        Получение разъяснений применения налогового законодательства
+      </li>
+      <li class="tax-law__link">Налоговый аудит</li>
+      <li class="tax-law__link">Налоговый мониторинг</li>
+      <li class="tax-law__link">
+        Юридическое сопровождение в связи с претензиями по внутригрупповым
+        услугам
+      </li>
+      <li class="tax-law__link">
+        Правоприменение по налогу на прибыль, НДС, налогу на имущество
+        организаций, налогу на операции с ценными бумагами и др.
+      </li>
+      <li class="tax-law__link">
+        Услуги, связанные с применением общих норм против уклонения от
+        налогообложения (ст. 54.1. НК РФ)
+      </li>
+      <li class="tax-law__link">Международное налогообложение</li>
+      <li class="tax-law__link">
+        Законодательство о контролируемых иностранных компаниях (КИК) и
+        деофшоризации
+      </li>
+      <li class="tax-law__link">
+        Налогообложение в рамках инвестиционной деятельности
+      </li>
+      <li class="tax-law__link">
+        Специальные налоговые режимы, в том числе упрощенная система
+        налогообложения (УСН)
+      </li>
+      <li class="tax-law__link">
+        Консультирование по налогу на прибыль в части затрат на НИОКР
+      </li>
+      <li class="tax-law__link">
+        Консультации по налогообложению физических лиц, подготовка и
+        представление деклараций
+      </li>
+      <li class="tax-law__link">
+        Юридические услуги блогерам в связи с претензиями по неуплате налогов
+      </li>
+      <li class="tax-law__link">Налогообложение недропользования</li>
+      <li class="tax-law__link">
+        Система работы с контрагентами как часть системы внутреннего контроля
+      </li>
+    </ul>
+    <div class="tax-law entity-sub-blocks__title title">
+      <h5>Урегулирование налоговых споров</h5>
+    </div>
+    <ul class="tax-law__list">
+      <li class="tax-law__link">
+        Сопровождение выездных и камеральных проверок, а также проверок
+        соблюдения правил трансфертного ценообразования
+      </li>
+      <li class="tax-law__link">
+        Оспаривание результатов выездных и камеральных проверок. Судебное и
+        досудебное урегулирование. Сопровождение переговоров с налоговыми
+        органами о заключении мирового соглашения
+      </li>
+      <li class="tax-law__link">
+        Защита в спорах об обоснованности налоговой выгоды и добросовестности
+        налогоплательщика
+      </li>
+      <li class="tax-law__link">
+        Компенсация расходов на судебное представительство и иных судебных
+        расходов
+      </li>
+      <li class="tax-law__link">
+        Разбирательства о возмещении излишне уплаченных налогов
+      </li>
+      <li class="tax-law__link">Дела о возмещении НДС</li>
+      <li class="tax-law__link">
+        Защита клиентов при применении законодательства об уголовной
+        ответственности
+      </li>
+    </ul>
+  </div>
+</div>
+
+          <div class="construction target target-5" id="construction">
+  <div class="container">
+    <div class="construction-law entity-sub-blocks__title title">
+      <h4>Строительство и недвижимость</h4>
+    </div>
+    <p class="construction-law__text entity-sub-blocks__text">
+      Споры в области строительства весьма специфичны. Успешное разрешение
+      поставленных задач нашей командой обусловлено использованием практического
+      подхода к проблематике, осведомленностью о реальном положении дел на рынке
+      и знанием принципов работы в указанной сфере.
+    </p>
+    <div class="construction-law entity-sub-blocks__title title">
+      <h5></h5>
+    </div>
+    <ul class="construction-law__list">
+      <li class="construction-law__link">
+        Сопровождение сделок с недвижимостью:
+        <ul class="construction-law__sub-list">
+          <li class="construction-law__sub-link">
+            Комплексная юридическая проверка активов, компаний и холдингов
+          </li>
+          <li class="construction-law__sub-link">
+            Минимизация рисков сторон сделки с недвижимостью
+          </li>
+        </ul>
+      </li>
+      <li class="construction-law__link">
+        Структурирование, ревизия и реконфигурация отношений между инвесторами,
+        застройщиками и подрядчиками, в том числе в связи с изменением экономики
+        проектов:
+        <ul class="construction-law__sub-list">
+          <li class="construction-law__sub-link">
+            Сокращение убытков и защита активов Клиента
+          </li>
+        </ul>
+      </li>
+      <li class="construction-law__link">
+        Взаимоотношения между заказчиком и генподрядчиком при строительстве
+        крупных объектов:
+        <ul class="construction-law__sub-list">
+          <li class="construction-law__sub-link">
+            Предупреждение и минимизация рисков сторон на основе разработанной
+            матрицы рисков, предотвращение конфликтов
+          </li>
+        </ul>
+      </li>
+      <li class="construction-law__link">
+        <ul class="construction-law__sub-list">
+          <li class="construction-law__sub-link"></li>
+        </ul>
+      </li>
+      <li class="construction-law__link"></li>
+      <li class="construction-law__link"></li>
+    </ul>
+    <p class="construction-law__text entity-sub-blocks__text"></p>
+  </div>
+</div>
+
+          <div class="agriculture target target-6" id="agriculture">
+  <div class="container">
+    <div class="corporate-law entity-sub-blocks__title title">
+      <h4>Корпоративное право</h4>
+    </div>
+    <p class="corporate-law__text entity-sub-blocks__text"></p>
+    <div class="corporate-law entity-sub-blocks__title title">
+      <h5></h5>
+    </div>
+    <ul class="corporate-law__list">
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+    </ul>
+    <p class="corporate-law__text entity-sub-blocks__text"></p>
+  </div>
+  Сельское хозяйство.
+</div>
+
+          <div class="intellectual target target-8" id="intellectual">
+  <div class="container">
+    <div class="corporate-law entity-sub-blocks__title title">
+      <h4>Корпоративное право</h4>
+    </div>
+    <p class="corporate-law__text entity-sub-blocks__text"></p>
+    <div class="corporate-law entity-sub-blocks__title title">
+      <h5></h5>
+    </div>
+    <ul class="corporate-law__list">
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+    </ul>
+    <p class="corporate-law__text entity-sub-blocks__text"></p>
+  </div>
+  Интеллектуальная собственность.
+</div>
+
+          <div class="digital-law target target-7" id="digital-law">
+  <div class="container">
+    <div class="corporate-law entity-sub-blocks__title title">
+      <h4>Корпоративное право</h4>
+    </div>
+    <p class="corporate-law__text entity-sub-blocks__text"></p>
+    <div class="corporate-law entity-sub-blocks__title title">
+      <h5></h5>
+    </div>
+    <ul class="corporate-law__list">
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+      <li class="corporate-law__link"></li>
+    </ul>
+    <p class="corporate-law__text entity-sub-blocks__text"></p>
+  </div>
+  Цифровое право.
+</div>
+
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+	<div class="container">
+		<h2>Footer</h2>
+	</div>
+</footer>
+
+    <script src="./js/index.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  </body>
+</html>

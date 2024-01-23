@@ -1,25 +1,46 @@
 :root {
+	//включение плавной арокрутки
+	//значение auto - мнгновенная
+	//значение smooth - плавная
+	scroll-behavior: smooth;
 	//ширина контейнера и отступы контейнера
-	--container-width: 1200px;
+	--container-width: 1440px;
 	--container-padding: 15px;
 
 	//основной шрифт и акцентный шрифт
-	--font-main: 'Poppins', sans-serif;
-	--font-accent: 'Playfair Display', serif;
+	--font-main: "Lato", sans-serif;
+	--font-accent: "Open Sans", sans-serif;
 
 	//цвет бг, цвет текста, акцентный цвет
 	--page-bg: #fff;
 	--text-color: #000;
-	--accent: #ac182c;
+	--accent: #805011;
+	--hover: #d0bd9d;
 
-	//размеры для адаптивной верстки
-    --laptop-size: 1199px;
+	//размеры для адаптивной верстки, и/или переменные
+	--laptop-size: 1199px;
 	--tablet-size: 959px;
 	--mobile-size: 599px;
+	//высота header
+	--header-height: 70px;
 }
+//переменный для медиазапросов
+$laptop-size: var(--container-width);
+$large-tablet-size: 991.98px;
+$tablet-size: 767.98px;
+$mobile-size: 479.98px;
 
 //цвет бг и цвет текста для теемной версии сайта
 .dark {
-    --page-bg: #252526;
-    --text-color: #fff;
+	--page-bg: #252526;
+	--text-color: #fff;
+}
+//отступ от верхней части экрана,
+// для позиционировании прокрутки к этому блоку
+:target {
+	scroll-margin-top: calc(var(--header-height));
+}
+
+:root {
+	scroll-behavior: smooth;
 }

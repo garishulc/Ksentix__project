@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Юридические лица</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main>
+      <div class="entity">
+        <div class="container">
+          <div class="breadcrumble">
+            <ul>
+              <li>
+                <a class="breadcrumble__home" href="index.html">Главная</a>
+              </li>
+              <li>
+                <a class="breadcrumble__servises" href="servises.html"
+                  >Услуги</a
+                >
+              </li>
+              <li class="breadcrumble__active breadcrumble__entity">
+                <span>Юридическое лицо</span>
+              </li>
+            </ul>
+          </div>
+          <div class="entity__title title">
+            <h3>Услуги для юридического лица</h3>
+          </div>
+          <div class="entity__body">
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-1" href="#disputes">
+                <p class="entity__card-text">Разрешение споров и арбитраж</p>
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-2" href="#bankruptcy">
+                <p class="entity__card-text">Банкротство</p>
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-3" href="#corporate-law">
+                <p class="entity__card-text">Корпоративное право</p>
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-4" href="#tax-law">
+                <p class="entity__card-text">Консалтинг и налоговые споры</p>
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-5" href="#construction">
+                <p class="entity__card-text">Строительство и недвижимость</p>
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-6" href="#agriculture">
+                <p class="entity__card-text">Сельское хозяйство</p>
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-7" href="#digital-law">
+                <p class="entity__card-text">Цифровое право</p>
+              </a>
+            </div>
+            <div class="entity__wrapper-card">
+              <a class="entity__card source source-8" href="#intellectual">
+                <p class="entity__card-text">Интеллектуальная собственность</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="entity-sub-blocks">
+        <div class="conntaner">
+          @@include('blocks/sub-blocks/disputes.html')
+          @@include('blocks/sub-blocks/bankruptcy.html')
+          @@include('blocks/sub-blocks/corporate-law.html')
+          @@include('blocks/sub-blocks/tax-law.html')
+          @@include('blocks/sub-blocks/construction.html')
+          @@include('blocks/sub-blocks/agriculture.html')
+          @@include('blocks/sub-blocks/intellectual.html')
+          @@include('blocks/sub-blocks/digital-law.html')
+        </div>
+      </div>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/index.bundle.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  </body>
+</html>

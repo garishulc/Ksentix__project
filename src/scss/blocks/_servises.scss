@@ -1,0 +1,115 @@
+.servises {
+  padding: 80px 0 20px 0;
+  overflow: hidden;
+  height: 100vh;
+}
+.breadcrumble {
+  padding-left: 5px;
+}
+.servises__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4vh;
+}
+.servises__title {
+  text-align: center;
+
+  // @media (max-width: $mobile-size) {
+  //   font-size: 36px;
+  // }
+  // & h3 {
+  //   color: var(--accent);
+  //   max-height: 20%;
+  // }
+}
+
+.servises__body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 4em;
+  @media (max-width: $mobile-size) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.servises__card {
+  padding: 1em 1em;
+  border: 2px solid rgb(128, 80, 17);
+  border-radius: 1em;
+  position: relative;
+  @media (max-width: $mobile-size) {
+    padding: 0.5em;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    filter: opacity(0.5);
+  }
+  @media (hover: none) and (pointer: coarse) {
+    filter: opacity(0.8);
+  }
+  max-height: 60vh;
+  display: flex;
+
+  & > a {
+    gap: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &-image {
+    overflow: hidden;
+    & img {
+      display: block;
+      object-fit: cover;
+    }
+    @media (min-width: $laptop-size) {
+      max-width: 50vh;
+    }
+    // @media (max-width: $laptop-size) and (min-width: $tablet-size) {
+    //   max-width: 350px;
+    // }
+  }
+  &-text {
+    text-align: center;
+    font-family: var(--font-accent);
+    color: var(--accent);
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.5px;
+  }
+  ::after {
+    content: "";
+    position: absolute;
+    inset: -10px;
+    z-index: 1;
+  }
+  @media (max-width: $mobile-size) {
+    max-height: 30vh;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .servises__card:hover {
+    filter: opacity(1);
+    transition: 0.7s;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.9);
+    &:nth-child(odd) {
+      transform: scale(1.05) translate(30px, 0px);
+    }
+    &:nth-child(even) {
+      transform: scale(1.05) translate(-30px, 0px);
+    }
+    @media (max-width: $mobile-size) {
+      &:nth-child(odd) {
+        transform: scale(1) translate(0px, -10px);
+      }
+      &:nth-child(even) {
+        transform: scale(1) translate(0px, -10px);
+      }
+    }
+  }
+}
