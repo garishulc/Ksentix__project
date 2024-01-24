@@ -5,8 +5,8 @@
 // mobileNav();
 const $ = require("jquery");
 
-import main from './modules/main.js';
-main();
+// import main from './modules/main.js';
+// main();
 
 import isMobile from './modules/ismobile.js';
 isMobile();

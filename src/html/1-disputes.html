@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Юридические лица</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+    />
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <main class="entity-servises">
+      <div class="container">
+        <div class="breadcrumble">
+          <ul>
+            <li>
+              <a class="breadcrumble__home" href="index.html">Главная</a>
+            </li>
+            <li>
+              <a class="breadcrumble__servises" href="servises.html">Услуги</a>
+            </li>
+            <li class="breadcrumble__active breadcrumble__entity">
+              <a class="breadcrumble__servises" href="entity.html"
+                >Юридическое лицо</a
+              >
+            </li>
+            <li class="breadcrumble__active breadcrumble__entity">
+              <span>Решение споров и арбитраж</span>
+            </li>
+          </ul>
+        </div>
+        <div class="entity-servises__title title">
+          <h4>Решение споров и арбитраж</h4>
+        </div>
+        <p class="entity-servises__text">
+          Практика разрешения споров и медиации является ключевой практикой
+          фирмы, фокус которой направлен на работу в областях, где правовое
+          регулирование является противоречивым или пробельным. Мы эффективно
+          сопровождаем многоаспектные и сложные судебные споры, связанные с
+          инвестиционными, кредитными, подрядными, лизинговыми и залоговыми
+          правоотношениями, а также корпоративные споры и споры, связанные с
+          возвратом выведенных активов, в том числе в рамках обособленных споров
+          по банкротным процедурам.
+        </p>
+        <div class="entity-servises__title title">
+          <h5>Разработка и реализация стратегии защиты Клиента:</h5>
+        </div>
+        <ul class="entity-servises__list">
+          <li class="entity-servises__link">
+            Оценка перспективы дела с учетом возможных позиций сторон
+          </li>
+          <li class="entity-servises__link">
+            Поиск и подготовка доказательств
+          </li>
+          <li class="entity-servises__link">Подготовка мировых соглашений</li>
+          <li class="entity-servises__link">
+            Представление интересов Клиента в суде во всех инстанциях, включая
+            все высшие судебные инстанции
+          </li>
+          <li class="entity-servises__link">Исполнительное производство</li>
+          <li class="entity-servises__link">Обеспечительные меры</li>
+        </ul>
+        <p class="entity-servises__text">
+          Но может быть, лучше договориться? Сопутствующий ущерб от судебного
+          спора (в результате ареста активов и т.п.) может оказаться страшнее
+          проигрыша самого спора. Часто бывает, что для всех сторон лучше не
+          доводить дело до суда, а разрешить спор миром. В этом наши юристы тоже
+          окажут содействие доверителю. Мы поможем провести переговоры и достичь
+          взаимовыгодного решения!
+        </p>
+      </div>
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>

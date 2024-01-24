@@ -11,7 +11,7 @@
 	--font-main: "Lato", sans-serif;
 	--font-accent: "Open Sans", sans-serif;
 
-	//цвет бг, цвет текста, акцентный цвет
+	//цвет бг, цвет текста, акцентный цвет, цвет ховера
 	--page-bg: #fff;
 	--text-color: #000;
 	--accent: #805011;
@@ -39,8 +39,4 @@ $mobile-size: 479.98px;
 // для позиционировании прокрутки к этому блоку
 :target {
 	scroll-margin-top: calc(var(--header-height));
-}
-
-:root {
-	scroll-behavior: smooth;
 }
