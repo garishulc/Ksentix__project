@@ -1,0 +1,15 @@
+[33m42923fd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{0}: checkout: moving from main to master
+[33m93f45bc[m[33m ([m[1;32mmain[m[33m)[m HEAD@{1}: checkout: moving from master to main
+[33m42923fd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{2}: checkout: moving from dev to master
+[33m5c225ef[m[33m ([m[1;32mdev[m[33m)[m HEAD@{3}: commit: добавил эффект при наведении на ссылки в хлебных крошках, немного переработал карточки в услугах, начал наладку и упорядочевание текстав в
+[33m2e29334[m HEAD@{4}: commit: переделал блок с юоидисческим лицов и страницы к ней относящиеся отдельно, а так же добавил туда хлебные крошки v1.0
+[33m9187c72[m HEAD@{5}: commit: первый тестовый коммит для веткви версии dev v 1.0
+[33m737828f[m HEAD@{6}: commit: first
+[33mb6afa7f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/dev[m[33m)[m HEAD@{7}: checkout: moving from main to dev
+[33m93f45bc[m[33m ([m[1;32mmain[m[33m)[m HEAD@{8}: commit: add base constraction
+[33mb6afa7f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/dev[m[33m)[m HEAD@{9}: checkout: moving from dev to main
+[33mb6afa7f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/dev[m[33m)[m HEAD@{10}: checkout: moving from master to dev
+[33m42923fd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m HEAD@{11}: commit: start to work
+[33m96615fb[m HEAD@{12}: pull: Merge made by the 'ort' strategy.
+[33m1b7d619[m HEAD@{13}: commit: v1.0
+[33m3c838f4[m HEAD@{14}: commit (initial): first commit
