@@ -26,6 +26,10 @@ body {
 	& h4 {
 		font-size: 48px;
 	}
+	//подзаголовок для списков в услугах
+	& h5 {
+		font-size: 32px;
+	}
 	@media (max-width: $mobile-size) {
 		font-size: 36px;
 	}

@@ -7,7 +7,6 @@
   & li {
     display: inline;
     float: left;
-
     text-align: center;
     padding: 5px 10px 5px 10px;
     // position: relative;
@@ -54,7 +53,10 @@
   }
   @media (hover: hover) and (pointer: fine) {
     & a:hover {
+      transition: 0.7s;
       color: var(--hover);
+      //text-shadow под вопроом, но все же интересно
+      text-shadow: 1.5px 1px 1px #000000;
     }
   }
 }
