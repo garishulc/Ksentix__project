@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Юридические лица</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
-    />
-  </head>
-  <body>
-    @@include('blocks/header.html')
-    <main class="entity-servises">
-      <div class="container">
-        <div class="breadcrumble">
-          <ul>
-            <li>
-              <a class="breadcrumble__home" href="index.html">Главная</a>
-            </li>
-            <li>
-              <a class="breadcrumble__servises" href="servises.html">Услуги</a>
-            </li>
-            <li>
-              <a class="breadcrumble__entity" href="entity.html"
-                >Юридическое лицо</a
-              >
-            </li>
-            <li class="breadcrumble__active">
-              <span>Решение споров и арбитраж</span>
-            </li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Юридические лица</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" />
+</head>
+
+<body>
+  @@include('blocks/header.html')
+  <main class="entity-servises">
+    <div class="container">
+      <div class="breadcrumble">
+        <ul>
+          <li>
+            <a class="breadcrumble__home" href="index.html">Главная</a>
+          </li>
+          <li>
+            <a class="breadcrumble__servises" href="servises.html">Услуги</a>
+          </li>
+          <li>
+            <a class="breadcrumble__entity" href="entity.html">Юридическое лицо</a>
+          </li>
+          <li class="breadcrumble__active">
+            <span>Решение споров и арбитраж</span>
+          </li>
+        </ul>
+      </div>
+      <div class="entity-servises__body">
+        <div class="entity-sevises__picture">
+          <img src="../img/entity/disputes2-left-person.svg" alt="" class="entity-serrvises__img disputes">
         </div>
-        <div class="entity-servises__body">
+        <div class="entity-servises__content">
           <div class="entity-servises__title title">
             <h4>Решение споров и арбитраж</h4>
           </div>
@@ -75,9 +78,14 @@
             достичь взаимовыгодного решения!
           </p>
         </div>
+        <div class="entity-sevises__picture">
+          <img src="../img/entity/disputes2-right-person.svg" alt="" class="entity-serrvises__img disputes">
+        </div>
       </div>
-    </main>
-    @@include('blocks/footer.html')
-    <script src="./js/index.bundle.js"></script>
-  </body>
+    </div>
+  </main>
+  @@include('blocks/footer.html')
+  <script src="./js/index.bundle.js"></script>
+</body>
+
 </html>
